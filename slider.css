@@ -1,0 +1,158 @@
+/* d1-slider */
+
+
+.d1-slider {
+	width:100%;
+	display: flex;
+}
+
+.d1-main {
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.d1-main > *{
+	position: sticky;
+	top:0;
+}
+
+.d1-main video {
+	position: absolute;
+	top:0;
+	left:10%;
+	max-width: 80%;
+}
+
+.d1-main img{
+	width: 100%;
+}
+
+.d1-navi {
+	display: flex;
+    flex-direction: column;
+}
+
+.d1-navi > * {order: 10;}
+.d1-navi :last-child  { order: 3; }
+.d1-navi :nth-child(1) { order: 1; }
+.d1-navi :nth-child(2) { order: 2; }
+
+.d1-navi a img{
+	max-width: 110px;
+	padding-bottom: 10px;
+}
+
+
+.d1-slider a.video {
+	opacity: 0.9;
+	position:relative;
+}
+
+.d1-slider a.video span {
+	display: block;
+	position: absolute;
+	width:100%;
+	height: 100%;
+	background: url(/play-button.png) center center no-repeat;
+	z-index:1;
+	top:0;
+	left:0;
+	background-size: 75%;
+}
+
+.d1-slider a.video img{
+	opacity: 0.5;
+}
+
+.d1-mobile.d1-slider {
+	flex-direction: column!important;
+}
+
+
+.d1-mobile .d1-main{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.d1-mobile .d1-navi {
+	width: 100%;
+	padding-top: 15px;
+    display: flex;
+	flex-direction: row!important;
+	overflow: auto;
+}
+
+.d1-mobile .d1-navi a {
+	margin-right: 10px;
+}
+
+.d1-left.d1-slider {
+	flex-direction: row-reverse;
+}
+
+.d1-left .d1-main {
+	padding-left: 25px;
+}
+
+.d1-right.d1-slider {
+	flex-direction: row;
+}
+
+.d1-swipe-r {
+	animation:slide-r 2s linear infinite;
+}
+
+.d1-swipe-l {
+	animation:slide-l 2s linear infinite;
+}
+
+.d1-slider .spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+.d1-slider .spinner:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: d1-spinner 1.2s linear infinite;
+}
+@keyframes d1-spinner  {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-r{
+  0%{
+    transform: translate(0px, 0px);
+  }
+  50%{
+    transform: translate(100px, 0px);
+  }
+  100%{
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes slide-l{
+  0%{
+    transform: translate(0px, 0px);
+  }
+  50%{
+    transform: translate(-100px, 0px);
+  }
+  100%{
+    transform: translate(0px, 0px);
+  }
+}
