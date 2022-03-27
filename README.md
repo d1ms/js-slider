@@ -18,7 +18,7 @@ Installation
 </code>
 
 3. JS Initialize code (after HTML)
-<code>
+```
 new d1slider({
   selector: ".d1-slider",
   poster:
@@ -50,4 +50,4 @@ new d1slider({
   },
   magnify: 1.5
 });
-</code>
+```
