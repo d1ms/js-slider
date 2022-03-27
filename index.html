@@ -20,3 +20,29 @@
       </a>
    </div>
 </div>
+
+<script>
+new d1slider({
+    selector: '.d1-slider',
+    poster: '/catalog/view/theme/default/image/fashion.jpg',
+    afterChange: function(i, img) {
+        if (!i.getAttribute('data-zoom')) return;
+        $('#zoom_els').attr('data-zoom', i.getAttribute('data-zoom'));
+        $('#zoom_els').trigger('zoom.destroy');
+        $('#zoom_els').parent().zoom({
+            url: $(this).find('img').attr('data-zoom'),
+            on: 'click',
+            magnify: this.magnify,
+        });
+    },
+    zoomJs: 'https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js',
+    zoomInitialize: function() {
+        $('#zoom_els').wrap('<span style="display:inline-block"></span>').css('display', 'block').parent().zoom({
+            url: $(this).find('img').attr('data-zoom'),
+            on: 'click',
+            magnify: this.magnify,
+        });
+    },
+    magnify: 1.5,
+});
+</script>
