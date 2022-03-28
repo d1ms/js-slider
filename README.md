@@ -25,6 +25,20 @@ Installation
 </div>
 ```
 3. JS Initialize code (after HTML)
+
+
+SLIDER WITHOUT ZOOM
+
+```
+new d1slider({
+  selector: ".d1-slider",
+  poster:
+    "https://fashion-opt.com/catalog/view/theme/default/image/fashion.jpg",
+});
+```
+
+OR SLIDER WITH ZOOM PLUGIN
+
 ```
 new d1slider({
   selector: ".d1-slider",
@@ -58,12 +72,11 @@ new d1slider({
   magnify: 1.5
 });
 ```
+DONE!
 
-OR PURE SLIDER WITHOUT ZOOM PLUGIN
-
-```
-new d1slider({
-  selector: ".d1-slider",
-  poster:
-    "https://fashion-opt.com/catalog/view/theme/default/image/fashion.jpg",
-});
+ABOUT SLIDER PARAMETRS
+[b]selector[/b] - only required parametr that define the slider block
+[b]poster[/b] - the url to video preview that will be showed when video begin loading or video file is not exist (the unrequired parametr)
+[b]zoomJs[/b] - the url to Zoom library, that will be downloded in the background process
+[b]zoomInitialize[\b] - the zoom initializing function
+[b]afterChange[\b] - the function is executing after click, change image url for zoom plugin
