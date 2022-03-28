@@ -74,7 +74,7 @@ new d1slider({
 ```
 DONE!
 
-ABOUT SLIDER PARAMETRS
+About the slider parameters
 
 <b>selector</b> - only required parametr that define the slider block
 
