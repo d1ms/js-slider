@@ -53,3 +53,12 @@ new d1slider({
   magnify: 1.5
 });
 ```
+
+OR PURE SLIDER WITHOUT ZOOM PLUGIN
+
+```
+new d1slider({
+  selector: ".d1-slider",
+  poster:
+    "https://fashion-opt.com/catalog/view/theme/default/image/fashion.jpg",
+});
