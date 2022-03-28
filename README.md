@@ -13,8 +13,8 @@ Installation
 1. Include d1slider.js and slider.css With CDN in the your page
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/d1ms/js-slider@main/d1slider.js"></script>
-<link href="https://cdn.jsdelivr.net/gh/d1ms/js-slider@main/slider.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/d1ms/js-slider@latest/d1slider.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/d1ms/js-slider@latest/slider.css" rel="stylesheet">
 
 ```
 2. HTML CODE EXAMPLE
