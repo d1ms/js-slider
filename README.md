@@ -76,12 +76,12 @@ DONE!
 
 About the slider parameters
 
-<b>selector</b> - only required parametr that define the slider block
+<b>selector</b> - only required parameter that define the slider block
 
-<b>poster</b> - the url to video preview that will be showed when video begin loading or video file is not exist (the unrequired parametr)
+<b>poster</b> - the url to video preview that will be showed when video begin loading or video file is not exist (the unrequired parameter)
 
-<b>zoomJs</b> - the url to Zoom library, that will be downloded in the background process
+<b>zoomJs</b> - the url to Zoom library, that will be downloded in the background process (the unrequired parameter)
 
-<b>zoomInitialize</b> - the zoom initializing function
+<b>zoomInitialize</b> - the zoom initializing function (the unrequired parameter)
 
-<b>afterChange</b> - the function is executing after click, change image url for zoom plugin
+<b>afterChange</b> - the function is executing after click, change image url for zoom plugin (the unrequired parameter)
