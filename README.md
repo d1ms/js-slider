@@ -75,8 +75,13 @@ new d1slider({
 DONE!
 
 ABOUT SLIDER PARAMETRS
+
 <b>selector</b> - only required parametr that define the slider block
+
 <b>poster</b> - the url to video preview that will be showed when video begin loading or video file is not exist (the unrequired parametr)
+
 <b>zoomJs</b> - the url to Zoom library, that will be downloded in the background process
+
 <b>zoomInitialize</b> - the zoom initializing function
+
 <b>afterChange</b> - the function is executing after click, change image url for zoom plugin
