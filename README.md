@@ -10,8 +10,13 @@ Hello, it's a just clear JS vertical image/video slider. The slider have been in
 
 Installation
 
-1. Include d1slider.js and slider.css in the your page
+1. Include d1slider.js and slider.css With CDN in the your page
 
+```
+<script src="https://cdn.jsdelivr.net/gh/d1ms/js-slider@main/d1slider.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/d1ms/js-slider@main/slider.css" rel="stylesheet">
+
+```
 2. HTML CODE EXAMPLE
 ```
 <div class="d1-slider d1-left">
